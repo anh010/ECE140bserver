@@ -1,0 +1,36 @@
+:root{
+	--smallpad:0.5rem;
+    --mediumpad:1rem;
+    
+    --hdersize:1.5rem;
+    --mainfont: Lucida Console;
+
+    --textcolor:white;
+	--backgroundcolor: hsl(240, 0%, 20%);
+	--maincolor:hsl(248, 53%, 58%);
+  }
+  
+  body{
+    font-family: var(--mainfont);
+    box-sizing:border-box;
+    color:var(--textcolor);
+    background:var(--backgroundcolor);
+  }
+  .title{
+    padding:var(--mediumpad);
+    text-align:center;
+    background:var(--maincolor);
+  }
+  .q{
+    font-size:var(--hdersize);
+  }
+  .paragraph{
+    padding:var(--smallpad);
+  }
+  .team{
+    display:flex;
+  }
+  .person{
+    padding:var(--smallpad);
+    border:1px solid var(--maincolor);
+  }
