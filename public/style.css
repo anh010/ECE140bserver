@@ -1,11 +1,11 @@
 :root{
 	--smallpad:0.5rem;
-    --mediumpad:1rem;
+  --mediumpad:1rem;
     
-    --hdersize:1.5rem;
-    --mainfont: Lucida Console;
+  --hdersize:1.5rem;
+  --mainfont: Lucida Console;
 
-    --textcolor:white;
+  --textcolor:white;
 	--backgroundcolor: hsl(240, 0%, 20%);
 	--maincolor:hsl(248, 53%, 58%);
   }
@@ -25,12 +25,20 @@
     font-size:var(--hdersize);
   }
   .paragraph{
+    text-align:center;
     padding:var(--smallpad);
   }
   .team{
-    display:flex;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    justify-content:space-between;
   }
   .person{
+    text-align:center;
     padding:var(--smallpad);
     border:1px solid var(--maincolor);
+  }
+  img{
+    padding:var(--smallpad);
+    border-radius: 10px;
   }
