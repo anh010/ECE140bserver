@@ -28,6 +28,15 @@
     text-align:center;
     padding:var(--smallpad);
   }
+  .product{
+    margin-left:var(--mediumpad);
+    margin-right:var(--mediumpad);
+    
+  }
+  #example{
+    height: 150px;
+    width: 150px;
+  }
   .team{
     display:grid;
     grid-template-columns:repeat(2,1fr);

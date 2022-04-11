@@ -1,29 +1,23 @@
-
 from wsgiref.simple_server import make_server
 from pyramid.config import Configurator
-from pyramid.renderers import render_to_response
+from pyramid.response import FileResponse
 
-import mysql.connector as mysql
-import os
-
-
-def get_home(req):
-
-  return render_to_response("index.html")
+def index_page(request):
+      return FileResponse('index.html')
 
 
-''' Route Configurations '''
 if __name__ == '__main__':
-  config = Configurator()
+    with Configurator() as config:
+        
+        config.add_route('home', '/')
+          
+        config.add_view(index_page,route_name ='home')
+        
 
-  config.include('pyramid_jinja2')
-  config.add_jinja2_renderer('.html')
-
-  config.add_route('get_home', '/')
-  config.add_view(get_home, route_name='get_home')
-
-  config.add_static_view(name='/', path='./public', cache_max_age=3600)
-
-  app = config.make_wsgi_app()
-  server = make_server('0.0.0.0', 6000, app)
-  server.serve_forever()
+        config.add_static_view(name='/', path='./public', cache_max_age=3600)
+        
+        app = config.make_wsgi_app()
+        
+    print("server started on port 6543")
+    server = make_server('0.0.0.0', 6543, app)
+    server.serve_forever()
