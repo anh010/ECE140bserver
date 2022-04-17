@@ -1,13 +1,16 @@
 :root{
 	--smallpad:0.5rem;
   --mediumpad:1rem;
+  --largepad:2rem;
     
+  --shortTransi:0.6;
   --hdersize:1.5rem;
   --mainfont: Lucida Console;
 
   --textcolor:white;
 	--backgroundcolor: hsl(240, 0%, 20%);
 	--maincolor:hsl(248, 53%, 58%);
+  --darker_maincolor:hsl(248, 53%, 30%);
   }
   
   body{
@@ -31,7 +34,43 @@
   .product{
     margin-left:var(--mediumpad);
     margin-right:var(--mediumpad);
-    
+
+  }
+  .button{
+    font-size: large;
+    transition-duration: var(--shortTransi);
+    font-family: var(--mainfont);
+    border-radius: var(--mediumpad);
+    background-color: var(--maincolor);
+    color: white;
+    padding: var(--smallpad);
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .button:hover{
+    background-color: var(--darker_maincolor);
+    color:white;
+  }
+  section{
+    padding: var(--smallpad);
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    justify-content:space-between;
+  }
+  aside{
+    text-align:left;
+    padding:var(--smallpad);
+    border:1px solid var(--maincolor);
+  }
+  .button:active{
+    transform: translateY(4px);
+  }
+  .link{
+    color:white;
+  }
+  .link:hover{
+    background-color: var(--darker_maincolor);
+    color:white;
   }
   #example{
     height: 150px;
