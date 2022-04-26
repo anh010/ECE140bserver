@@ -1,7 +1,9 @@
 :root{
 	--smallpad:0.5rem;
   --mediumpad:1rem;
+  --midpad: 1.5rem;
   --largepad:2rem;
+  --xlpad:3rem;
     
   --shortTransi:0.6;
   --hdersize:1.5rem;
@@ -19,17 +21,26 @@
     color:var(--textcolor);
     background:var(--backgroundcolor);
   }
+  .center{
+    margin: auto;
+     width: 60%; 
+    padding: 10px;
+  }
   .title{
     padding:var(--mediumpad);
+    border-radius: var(--largepad);
     text-align:center;
     background:var(--maincolor);
+    background-size:auto;
   }
   .q{
-    font-size:var(--hdersize);
+    font-size:var(--largepad);
   }
   .paragraph{
+    line-height: 1.5;
+    font-size: var(--largepad);
     text-align:center;
-    padding:var(--smallpad);
+    padding:var(--mediumpad);
   }
   .product{
     margin-left:var(--mediumpad);
@@ -37,7 +48,7 @@
 
   }
   .button{
-    font-size: large;
+    font-size: var(--midpad);
     transition-duration: var(--shortTransi);
     font-family: var(--mainfont);
     border-radius: var(--mediumpad);
@@ -78,15 +89,20 @@
   }
   .team{
     display:grid;
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:repeat(1,1fr);
     justify-content:space-between;
   }
   .person{
+    font-size: var(--midpad);
     text-align:center;
     padding:var(--smallpad);
-    border:1px solid var(--maincolor);
+    
   }
   img{
     padding:var(--smallpad);
     border-radius: 10px;
+  }
+  .frame{
+    border:var(--smallpad) solid  var(--maincolor);
+
   }
