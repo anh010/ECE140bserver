@@ -87,6 +87,11 @@
     height: 150px;
     width: 150px;
   }
+  #paypal{
+    height: 75%;
+    width: 50%;
+  }
+  
   .team{
     display:grid;
     grid-template-columns:repeat(1,1fr);
@@ -103,6 +108,7 @@
     border-radius: 10px;
   }
   .frame{
+
     border:var(--smallpad) solid  var(--maincolor);
 
   }
