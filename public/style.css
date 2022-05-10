@@ -30,15 +30,18 @@
     padding:var(--mediumpad);
     border-radius: var(--largepad);
     text-align:center;
-    background:var(--maincolor);
+    font-size: var(--xlpad);
+    /* background:var(--maincolor); */
+    -webkit-text-stroke: 1px var(--maincolor);
+    text-decoration: underline var(--maincolor);
     background-size:auto;
   }
   .q{
-    font-size:var(--largepad);
+    font-size:var(--xlpad);
   }
   .paragraph{
     line-height: 1.5;
-    font-size: var(--largepad);
+    font-size: var(--midpad);
     text-align:center;
     padding:var(--mediumpad);
   }
@@ -83,13 +86,25 @@
     background-color: var(--darker_maincolor);
     color:white;
   }
+  .typography{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .text{
+    line-height: 1.5;
+    font-size: var(--largepad);
+    text-align:left;
+    /* padding:var(--mediumpad); */
+  }
+  
   #example{
-    height: 150px;
-    width: 150px;
+    height: 70%;
+    width: 50%;
   }
   #paypal{
-    height: 75%;
-    width: 50%;
+    height: 50%;
+    width: 30%;
   }
   
   .team{
