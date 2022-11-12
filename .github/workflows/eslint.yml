@@ -54,7 +54,7 @@ jobs:
           VALIDATE_ALL_CODEBASE: false
           # Change to 'master' if your main branch differs
           DEFAULT_BRANCH: lint
-          GITHUB_WORKSPACE: public/
+          DEFAULT_WORKSPACE: public/
           VALIDATE_JAVASCRIPT_ES: true
           VALIDATE_CSS: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
