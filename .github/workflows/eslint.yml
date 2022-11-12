@@ -49,9 +49,9 @@ jobs:
       # Run Linter against code base #
       ################################
       - name: Lint Code Base
-        uses: github/super-linter/slim@v4
+        uses: github/super-linter@4.9.7
         env:
           VALIDATE_ALL_CODEBASE: false
-          # Change to 'master' if your main branch differs
+
           VALIDATE_JAVASCRIPT_ES: true
           VALIDATE_CSS: true
