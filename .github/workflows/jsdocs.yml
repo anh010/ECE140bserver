@@ -25,6 +25,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       - name: install jsdocs
-        run: npm install jsdocs
+        run: npm install --save-dev jsdocs
       - name: generate docs
-        run: npx jsdocs ./public
+        run: npx jsdocs ./public/script.js
