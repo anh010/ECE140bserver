@@ -38,4 +38,4 @@ jobs:
 
           git add -A
           git commit -m "generated docs"
-          git push origin lint
+          git push master HEAD:lint 
