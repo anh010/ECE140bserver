@@ -38,4 +38,4 @@ jobs:
 
           git add -A
           git commit -m "generated docs"
-          git push
+          git push origin lint
