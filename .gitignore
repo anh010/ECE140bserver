@@ -2,4 +2,3 @@
 db/
 *.py
 node_modules
-out
