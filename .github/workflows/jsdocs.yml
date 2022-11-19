@@ -27,4 +27,5 @@ jobs:
       
       - name: install jsdocs
         run: npm install jsdocs
-      - name: npx jsdocs ./public/
+      - name: generate docs
+        run: npx jsdocs ./public
