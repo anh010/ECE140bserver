@@ -1,1 +1,18 @@
-{}
+{
+    "name": "140bapp",
+    "author": "Alex hernandez ",
+    "email": "anh010@ucsd.edu",
+    "license": "MIT",
+    "version": "0.0.1",
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "git://https://github.com/anh010/ECE140bserver.git"
+    },
+    "devDependencies": {
+        "eslint": "^8.27.0"
+    },
+    "dependencies": {
+        "jsdoc": "^4.0.0"
+    }
+}
