@@ -31,8 +31,8 @@ jobs:
           recurse: true
           output_dir: ./out
           
-      # - name: commit to repo
-      #   uses: JamesIves/github-pages-deploy-action@4.0.0
-      #   with:
-      #     branch: lint # The branch the action should deploy to.
-      #     folder: ./out # The folder the action sho uld deploy.
+      - name: commit to repo
+        uses: JamesIves/github-pages-deploy-action@4.0.0
+        with:
+          branch: deploy_docs # The branch the action should deploy to.
+          folder: ./out # The folder the action sho uld deploy.
