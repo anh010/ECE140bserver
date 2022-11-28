@@ -14,4 +14,4 @@ jobs:
       - name: Prettier Action
         uses: creyD/prettier_action@v4.2
         with:
-          push_options: git push origin main 
+          push_options: git push origin main --force-with-lease
