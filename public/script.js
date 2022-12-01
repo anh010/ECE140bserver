@@ -52,6 +52,15 @@ const numbers = getNumber();
 
 for (const n in numbers) {
   console.log(n);
+  /**
+   * this section will add 2 to every num
+   */
+  console.log(n+2);
 }
+
+
+/**
+ * create new person
+ */
 let p1 = new Person("alex", 21, true);
 printDetails(p1);
