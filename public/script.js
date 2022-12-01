@@ -53,6 +53,7 @@ const numbers = getNumber();
 for (const n in numbers) {
   console.log(n);
   /**
+   * @summary hello there adding new comments
    * this section will add 2 to every num
    */
   console.log(n+2);
