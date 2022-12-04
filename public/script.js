@@ -65,3 +65,10 @@ for (const n in numbers) {
  */
 let p1 = new Person("alex", 21, true);
 printDetails(p1);
+
+
+/**
+ * 
+ * @param {*} param 
+ */
+function anotherOne(param ){}
