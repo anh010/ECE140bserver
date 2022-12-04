@@ -2,6 +2,15 @@
 // Check the username is between 8 to 15 characters
 // Check username are only composed of letters, numbers, '-', '.', '_'.
 // Check the password is between 8 to 15 characters
+// Include the server in your file
+const server = require('server');
+const { get, post } = server.router;
+
+// Handle requests to the url "/" ( http://localhost:3000/ )
+server([
+  get('/source/main/create_account/create_account.html', ctx => 'Hello world!')
+]);
+
 describe('Create account test cases', () => {
 
     // Declare constant that we will use repeatedly
