@@ -1,19 +1,14 @@
-name: Tests
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-    
+name: Automated browser tests
+on: push
 jobs:
-  ci:
-    runs-on: ubuntu-20.04
-    container: lironavon/docker-puppeteer-container:14.16.0
-    env:
-      CI: true
+  tests:
+    runs-on: ubuntu-latest
     steps:
-    # install the dependencies
-    - name: install dependencies
-      run: npm install
-    - name: test
-      run: npm test
+
+      - uses: actions/checkout@master
+
+      - name: Install deps
+        run: yarn
+
+      - name: Run tests
+        run: yarn test:integration
