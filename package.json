@@ -9,7 +9,8 @@
         "server": "^1.0.37"
     },
     "scripts": {
-        "test": "jest --runInBand"
+        "test": "jest --runInBand",
+        "serv": "http-server ./source"
     },
     "jest": {
         "preset": "jest-puppeteer",

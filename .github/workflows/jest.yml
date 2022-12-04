@@ -7,6 +7,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     - name: install dep
-      run: npm install --save-dev @types/jest
+      run: npm install 
     - name: run test
       run: npm run test

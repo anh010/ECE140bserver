@@ -4,7 +4,7 @@ module.exports = {
     headless: true
   },
   server: {
-    command: 'http-server ./source/main/',
+    command:'npm run serve',
     port: 5500,
     launchTimeout: 10000,
     debug: true,
