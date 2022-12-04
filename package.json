@@ -5,7 +5,8 @@
         "babel-jest": "^27.5.1",
         "jest": "^27.5.1",
         "jest-puppeteer": "^6.1.1",
-        "puppeteer": "^11.0.0"
+        "puppeteer": "^11.0.0",
+        "server": "^1.0.37"
     },
     "scripts": {
         "test": "jest --runInBand"
@@ -13,8 +14,5 @@
     "jest": {
         "preset": "jest-puppeteer",
         "verbose": true
-    },
-    "dependencies": {
-        "server": "^1.0.37"
     }
 }

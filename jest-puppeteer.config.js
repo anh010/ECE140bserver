@@ -3,10 +3,8 @@ module.exports = {
     dumpio: true,
     headless: true
   },
-  browser: 'chromium',
-  browserContext: 'default',
   server: {
-    command: 'node ./',
+    command: 'http-server ./source/main/',
     port: 5500,
     launchTimeout: 10000,
     debug: true,
