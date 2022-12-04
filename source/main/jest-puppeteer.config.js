@@ -1,6 +1,14 @@
 module.exports = {
-    launch: {
-      headless: false,
-      slowMo: 25
-    }
-  }
+  launch: {
+    dumpio: true,
+    headless: true
+  },
+  browser: 'chromium',
+  browserContext: 'default',
+  server: {
+    command: `npm start`,
+    port: 5500,
+    launchTimeout: 10000,
+    debug: true,
+  },
+}
