@@ -5,4 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: install dep
+      run: npm install
+    - name: run test
       run: npm run test
