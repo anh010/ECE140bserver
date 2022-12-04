@@ -4,6 +4,8 @@ jobs:
   tests:
     runs-on: ubuntu-latest
     steps:
+    - name: init
+      run: npm init
     - name: install dep
       run: npm install
     - name: run test
