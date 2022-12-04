@@ -6,7 +6,7 @@
         "jest": "^27.5.1",
         "jest-puppeteer": "^6.1.1",
         "puppeteer": "^11.0.0",
-        "server": "^1.0.37"
+        "http-server": "^14.0.0"
     },
     "scripts": {
         "test": "jest --runInBand",
